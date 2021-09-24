@@ -1,8 +1,9 @@
 /* Colors:
-#130208 background
+#000000 background
 #FFFFFF default text color
-#7A7A7A sub text color
-#81180E highlight color
+#E5E5E5 sub text color
+#14213D background focus
+#FCA311 highlight color
 */
 /* Fonts:
 Montserrat
@@ -10,7 +11,7 @@ Josefin Sans
 Prompt 
 */
 body {
-    background-color: #130208;
+    background-color: #000000;
     font-family: montserrat;
     font-weight: 100;
     color: #ffffff;
@@ -31,7 +32,7 @@ body {
     margin: 10px;
 }
 .navbar > div > a {
-    color: #7a7a7a;
+    color: #E5E5E5;
     text-decoration: none;
 }
 .navbar > div > a:active {
@@ -44,7 +45,7 @@ body {
 .work , .education{
     display: grid;
     grid-template-rows: repeat(2, 200px);
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 400px);
 }
 
 .footer {
@@ -53,6 +54,12 @@ body {
     bottom: 2em;
 }
 .footer > div > a {
-    color: #7a7a7a;
+    color: #E5E5E5;
     text-decoration: none;
+}
+.highlight{
+    color: #FCA311;
+}
+.date{
+    color:#E5E5E5;
 }
