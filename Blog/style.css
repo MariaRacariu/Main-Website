@@ -48,9 +48,15 @@ body {
 main{
     margin-right: 100px;
 }
-
 .date{
     color:#FCA311;
+}
+.continue-button{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.continue-button:hover{
+    color: #FCA311;
 }
 /* ===============
     Footer 
