@@ -46,7 +46,22 @@ body {
     Main 
    =============== */
 main{
-    margin-right: 100px;
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: 50% 20%;
+    grid-column-gap: 1em;
+    
+}
+.article{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-row-gap: 1em;
+}
+.side-article{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-row-gap: 1em;
+    justify-content: right;
 }
 .date{
     color:#FCA311;
