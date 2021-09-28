@@ -1,21 +1,11 @@
-
-/* Colors:
-#000000 background
-#FFFFFF default text color
-#E5E5E5 sub text color
-#14213D background focus
-#FCA311 highlight color
-*/
 /* Fonts:
 Montserrat
 Josefin Sans
 Prompt 
 */
 body {
-    background-color: #000000;
     font-family: montserrat;
     font-weight: 100;
-    color: #ffffff;
     margin-left: 100px;
 }
 @font-face {
@@ -25,8 +15,8 @@ body {
     font-weight: 100;
 }
 /* ===============
-    Navbar 
-   =============== */
+Navbar 
+=============== */
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -36,46 +26,46 @@ body {
     margin: 10px;
 }
 .navbar > div > a {
-    color: #E5E5E5;
     text-decoration: none;
 }
 .navbar > div > a:hover {
-    color: #FCA311;
+    color: red;
 }
 /* ===============
-    Main 
-   =============== */
+Main 
+=============== */
 main{
     margin-right: 200px;
     display: grid;
-    grid-template-columns: 50% 20%;
+    grid-template-columns: 50% 20% 20%;
     grid-column-gap: 1em;
-    
 }
 .article{
     display: grid;
     grid-auto-rows: auto;
     grid-row-gap: 1em;
+    
 }
 .side-article{
     display: grid;
     grid-auto-rows: auto;
     grid-row-gap: 1em;
-    justify-content: right;
+    align-content: right;
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
 .date{
-    color:#FCA311;
+    color:red;
 }
 .continue-button{
     text-decoration: none;
-    color: #FFFFFF;
 }
 .continue-button:hover{
-    color: #FCA311;
+    color: red;
 }
 /* ===============
-    Footer 
-   =============== */
+Footer 
+=============== */
 .footer {
     position: fixed;
 
@@ -83,6 +73,19 @@ main{
     bottom: 2em;
 }
 .footer > div > a {
-    color: #E5E5E5;
     text-decoration: none;
+}
+/* ===============
+Responsive/@media 
+=============== */
+@media (max-width: 1500px){
+    .article{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .side-article{
+        display:grid;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
 }
