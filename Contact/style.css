@@ -6,8 +6,7 @@ Prompt
 
 body {
   font-family: montserrat;
-  font-weight: 100;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 @font-face {
   font-family: "montserrat";
@@ -15,26 +14,12 @@ body {
   font-style: normal;
   font-weight: 100;
 }
-/* ===============
-  Navbar 
-   =============== */
-.navbar {
-  display: flex;
+/* =============== Navbar =============== */
+header{
+  display:flex;
   justify-content: flex-end;
-  flex-direction: row;
 }
-.navbar > div {
-  margin: 10px;
-}
-.navbar > div > a {
-  text-decoration: none;
-}
-.navbar > div > a:active {
-  color: red;
-}
-/* ===============
-  Main 
-   =============== */
+/* =============== Main =============== */
 .contactInput > form > div{
   margin: 2em;
 }
@@ -45,9 +30,7 @@ body {
 .choice{
   padding: 5px;
 }
-/* ===============
-Footer 
-=============== */
+/* =============== Footer =============== */
 .footer {
   position: fixed;
   right: 2em;
@@ -56,14 +39,20 @@ Footer
 .footer > div > a {
   text-decoration: none;
 }
-/* ===============
-Responsive/@media 
-=============== */
+/* =============== Responsive/@media =============== */
 @media (max-width: 600px){
   body{
     margin-left:10px;
   }
   textarea{
     max-width: 300px;
+  }
+}
+@media (max-width: 767px){
+  header{
+    justify-content: center;
+  }
+  .nav-item > a {
+    text-align: center;
   }
 }

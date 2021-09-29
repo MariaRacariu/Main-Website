@@ -1,7 +1,6 @@
 body {
     font-family: montserrat;
-    font-weight: 100;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 @font-face {
     font-family: "montserrat";
@@ -9,20 +8,12 @@ body {
     font-style: normal;
     font-weight: 100;
 }
-.navbar {
-    display: flex;
+/* =============== Nav =============== */
+header{
+    display:flex;
     justify-content: flex-end;
-    flex-direction: row;
 }
-.navbar > div {
-    margin: 10px;
-}
-.navbar > div > a {
-    text-decoration: none;
-}
-.navbar > div > a:active {
-    color: red;
-}
+/* =============== Main =============== */
 .article{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -45,6 +36,7 @@ img{
     grid-column-start: 2;
     grid-column-end: 5;
 }
+/* =============== Footer =============== */
 .footer {
     position: fixed;
     right: 2em;
@@ -53,7 +45,7 @@ img{
 .footer > div > a {
     text-decoration: none;
 }
-
+/* =============== Responsive/@media =============== */
 @media (max-width:1700px){
     body{
         margin-left:20px;
@@ -65,5 +57,13 @@ img{
     h1,.paragraph-1, .paragraph-2, .paragraph-3s{
         grid-column-start: 1;
         grid-column-end: 5;
+    }
+}
+@media (max-width: 767px){
+    header{
+    justify-content: center;
+    }
+    .nav-item > a {
+    text-align: center;
     }
 }

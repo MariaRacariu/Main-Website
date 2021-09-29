@@ -6,8 +6,8 @@ Prompt
 
 body {
   font-family: montserrat;
-  font-weight: 100;
-  margin-left: 100px;
+  grid-template-columns: auto;
+  margin-left: 20px;
 }
 @font-face {
   font-family: "montserrat";
@@ -15,49 +15,42 @@ body {
   font-style: normal;
   font-weight: 100;
 }
-/* ===============
-  Navbar 
-   =============== */
-.navbar {
-  display: flex;
+/* =============== Nav =============== */
+header{
+  display:flex;
   justify-content: flex-end;
-  flex-direction: row;
 }
-.navbar > div {
-  margin: 10px;
-}
-.navbar > div > a {
-  text-decoration: none;
-}
-.navbar > div > a:active {
-  color: red;
-}
-/* ===============
-  Main 
-   =============== */
+/* =============== Main =============== */
 .introText > p {
   font-size: 50px;
+  margin-top:50px
 }
-/* ===============
-  Footer 
-   =============== */
+
+/* =============== Footer =============== */
 .footer {
   position: fixed;
-
   right: 2em;
   bottom: 2em;
 }
 .footer > div > a {
   text-decoration: none;
 }
-/* ===============
-  Responsive/@media 
-   =============== */
+/* =============== Responsive/@media =============== */
 @media (max-width: 1000px){
-  body{
-    margin-left:20px;
-  }
   .introText > p {
     font-size: 40px;
+  }
+}
+@media (max-width:500px){
+  .introText > p{
+    margin-left:5px;
+  }
+}
+@media (max-width: 767px){
+  header{
+    justify-content: center;
+  }
+  .nav-item > a {
+    text-align: center;
   }
 }

@@ -5,8 +5,7 @@ Prompt
 */
 body {
     font-family: montserrat;
-    font-weight: 100;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 @font-face {
     font-family: "montserrat";
@@ -14,26 +13,12 @@ body {
     font-style: normal;
     font-weight: 100;
 }
-/* ===============
-Navbar 
-=============== */
-.navbar {
-    display: flex;
+/* =============== Navbar =============== */
+header{
+    display:flex;
     justify-content: flex-end;
-    flex-direction: row;
 }
-.navbar > div {
-    margin: 10px;
-}
-.navbar > div > a {
-    text-decoration: none;
-}
-.navbar > div > a:hover {
-    color: red;
-}
-/* ===============
-Main 
-=============== */
+/* =============== Main =============== */
 main{
     margin-right: 200px;
     display: grid;
@@ -55,17 +40,12 @@ main{
     grid-column-end: 5;
 }
 .date{
-    color:red;
+    color:blue;
 }
 .continue-button{
     text-decoration: none;
 }
-.continue-button:hover{
-    color: red;
-}
-/* ===============
-Footer 
-=============== */
+/* =============== Footer =============== */
 .footer {
     position: fixed;
 
@@ -75,9 +55,7 @@ Footer
 .footer > div > a {
     text-decoration: none;
 }
-/* ===============
-Responsive/@media 
-=============== */
+/* =============== Responsive/@media =============== */
 @media (max-width: 1500px){
     .article{
         grid-column-start: 1;
@@ -89,3 +67,10 @@ Responsive/@media
         grid-column-end: 5;
     }
 }
+@media (max-width: 767px){
+    header{
+    justify-content: center;
+    }
+    .nav-item > a {
+    text-align: center;
+    }
