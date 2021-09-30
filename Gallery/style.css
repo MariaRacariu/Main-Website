@@ -28,7 +28,7 @@ header{
 img{
     max-width: 300px;
     max-height: 300px;
-    box-shadow: 5px 5px rgba(92, 92, 92, 0.425);
+    box-shadow: 5px 5px rgba(151, 151, 151, 0.425);
 }
 /* =============== Footer =============== */
 .footer {

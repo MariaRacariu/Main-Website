@@ -6,7 +6,6 @@ Prompt
 
 body {
   font-family: montserrat;
-  grid-template-columns: auto;
   margin-left: 20px;
 }
 @font-face {
